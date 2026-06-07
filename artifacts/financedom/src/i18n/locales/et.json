@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Valitsuse akrediteeritud asutus",
-    "legal": "Euroopa õiguslik raamistik — ERDF/ESF+ 2021–2027",
+    "legal": "FEDE tegutseb Euroopa ja riikliku avaliku rahastamise reguleerivates õiguslikes raamistikes, sealhulgas ERF/ESF+ 2021–2027. Meie akrediteeritud struktuur tagab iga esitatud taotluse täieliku regulatiivse vastavuse.",
     "desc": "FEDE on ametlik platvorm tagastamatu rahastuse taotlemiseks Euroopa projekti elluviijatele.",
     "open": "2025–2027 taotlused avatud",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Juurdepääs ERF-, ESF+-, Ühtekuuluvusfondi ja riiklike programmidele kõikides 27 EL-i liikmesriigis. Igal territooriumil on konkreetsed rahastamispaketid, mis on kohandatud selle majanduslikele, kultuurilistele ja sektoriaalsetele tingimustele.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Iga projekti esitajat toetab pühendunud FEDE nõustaja, kes on valmis valideerima dokumente, vastama küsimustele ja tagama taotluse täielikkuse kuni lõpliku eraldamisotsuseni.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {

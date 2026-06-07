@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Vladno akreditiran organ",
-    "legal": "Evropski pravni okvir — ESRR/ESS+ 2021–2027",
+    "legal": "FEDE deluje v pravnem okviru, ki ureja evropsko in nacionalno javno financiranje, vključno s programi ESRR/ESS+ 2021–2027. Naša akreditirana struktura zagotavlja popolno regulativno skladnost vsake vložene vloge.",
     "desc": "FEDE je uradna platforma za vlaganje prošenj za nepovratno financiranje za evropske nosilci projektov.",
     "open": "Vloge 2025–2027 odprte",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Dostop do programov ESRR, ESS+, Kohezijskega sklada in nacionalnih programov v vseh 27 državah članicah EU. Vsako ozemlje ima specifične finančne ovojnice, prilagojene ekonomskim, kulturnim in sektorskim realnostim.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Vsakega prijavitelja projekta spremlja namenski svetovalec FEDE, ki je na voljo za potrditev dokumentov, odgovarjanje na vprašanja in zagotavljanje popolnosti vloge do končne odločitve o dodelitvi.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {

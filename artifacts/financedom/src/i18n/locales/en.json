@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Government-accredited body",
-    "legal": "European legal framework — ERDF/ESF+ 2021–2027",
+    "legal": "FEDE operates within the legal framework governing European and national public funding, including ERDF/ESF+ 2021–2027. Our accredited structure ensures full regulatory compliance of every application submitted through the platform.",
     "desc": "FEDE is the official platform for applying for non-repayable funding for project promoters across Europe.",
     "open": "2025-2027 applications open",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Access ERDF, ESF+, Cohesion Fund and dedicated national programmes across all 27 EU Member States. Each territory has specific funding envelopes tailored to its economic, cultural and sectoral realities.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Every project holder is supported by a dedicated FEDE advisor, available to validate your documents, answer your questions and ensure your application is complete through to the final funding decision.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {

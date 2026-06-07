@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Staatlich anerkannte Einrichtung",
-    "legal": "Europäischer Rechtsrahmen — EFRE/ESF+ 2021–2027",
+    "legal": "FEDE agiert im rechtlichen Rahmen der europäischen und nationalen öffentlichen Förderung, einschließlich EFRE/ESF+ 2021–2027. Unsere akkreditierte Struktur gewährleistet die vollständige regulatorische Konformität jedes Antrags.",
     "desc": "FEDE ist die offizielle Plattform für die Beantragung nicht rückzahlbarer Fördermittel für Projektträger in Europa.",
     "open": "Anträge 2025-2027 offen",
     "countries_count": "27 Länder abgedeckt",
-    "countries_desc": "EFRE-, ESF+- und nationale Programme",
+    "countries_desc": "Zugang zu EFRE-, ESF+-, Kohäsionsfonds- und nationalen Förderprogrammen in allen 27 EU-Mitgliedstaaten. Jedes Gebiet verfügt über spezifische Mittelausstattungen, die auf seine wirtschaftliche, kulturelle und sektorale Realität zugeschnitten sind.",
     "advisor": "Dedizierte Betreuung",
-    "advisor_desc": "Ein fester Berater pro Antrag",
+    "advisor_desc": "Jeder Projektträger wird von einem persönlich zugewiesenen FEDE-Berater begleitet, der Ihre Unterlagen prüft, Ihre Fragen beantwortet und die Vollständigkeit Ihrer Akte bis zur endgültigen Förderentscheidung sicherstellt.",
     "rgpd": "DSGVO-Konformität garantiert"
   },
   "why": {

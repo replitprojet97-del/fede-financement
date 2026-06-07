@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Kormányzatilag akkreditált szervezet",
-    "legal": "Európai jogi keret — ERFA/ESZA+ 2021–2027",
+    "legal": "A FEDE az európai és nemzeti közfinanszírozást szabályozó jogi keretben működik, beleértve az ERFA/ESZA+ 2021–2027 programokat. Akkreditált szervezetünk garantálja minden benyújtott pályázat teljes szabályozási megfelelőségét.",
     "desc": "A FEDE az európai projektgazdák vissza nem térítendő finanszírozási pályázatainak hivatalos platformja.",
     "open": "2025-2027-es dossziék nyitva",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Hozzáférés az ERFA-, ESZA+-, Kohéziós Alap- és nemzeti programokhoz az EU mind a 27 tagállamában. Minden területnek saját, gazdasági, kulturális és ágazati valóságához igazított finanszírozási keretei vannak.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Minden projektgazdát egy dedikált FEDE-tanácsadó kísér, aki rendelkezésre áll a dokumentumok érvényesítéséhez, a kérdések megválaszolásához és a pályázat teljességének biztosításához a végső odaítélési döntésig.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {

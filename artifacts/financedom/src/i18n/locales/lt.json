@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Vyriausybės akredituota įstaiga",
-    "legal": "Europos teisinis pagrindas — ERPF/ESF+ 2021–2027",
+    "legal": "FEDE veikia pagal Europos ir nacionalinių viešojo finansavimo teisės aktų sistemą, įskaitant ERPF/ESF+ 2021–2027 programas. Mūsų akredituota struktūra užtikrina visišką kiekvienos pateiktos paraiškos reguliacinę atitiktį.",
     "desc": "FEDE yra oficiali platforma teikti paraiškas negrąžinamam finansavimui Europos projektų vykdytojams.",
     "open": "2025–2027 m. bylos atvertos",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Prieiga prie ERPF, ESF+, Sanglaudos fondo ir nacionalinių programų visose 27 ES valstybėse narėse. Kiekviena teritorija turi konkrečius finansavimo paketus, pritaikytus prie jos ekonominės, kultūrinės ir sektoriaus realybės.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Kiekvieną projekto pareiškėją lydi skirtas FEDE patarėjas, pasiekiamas dokumentų patvirtinimui, klausimų atsakymui ir paraiškos išsamumo užtikrinimui iki galutinio finansavimo sprendimo.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {

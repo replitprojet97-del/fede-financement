@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Structure gouvernementale agréée",
-    "legal": "Cadre légal européen — FEDER/FSE+ 2021–2027",
+    "legal": "FEDE opère dans le cadre juridique défini par l'Article L1611-2 du Code Général des Collectivités Territoriales. Notre structure agréée garantit la conformité de chaque dossier aux exigences réglementaires européennes et nationales en vigueur.",
     "desc": "FEDE est la plateforme officielle de demande de financements non remboursables pour les porteurs de projets en Europe. Une subvention non remboursable est une aide financière accordée par l'État ou l'Union Européenne qui n'a pas à être restituée.",
     "open": "Dossiers 2025-2027 ouverts",
     "countries_count": "27 pays couverts",
-    "countries_desc": "Dispositifs FEDER, FSE+ et nationaux",
+    "countries_desc": "Accédez aux dispositifs FEDER, FSE+, Fonds de Cohésion et programmes nationaux dédiés dans les 27 États membres de l'Union Européenne. Chaque territoire bénéficie d'enveloppes spécifiques adaptées à ses réalités économiques, culturelles et sectorielles.",
     "advisor": "Accompagnement dédié",
-    "advisor_desc": "Un conseiller attitré par dossier",
+    "advisor_desc": "Chaque porteur de projet est suivi par un Conseiller FEDE attitré, disponible pour valider vos documents, répondre à vos questions et assurer la complétude de votre dossier jusqu'à la décision finale d'attribution.",
     "rgpd": "Conformité RGPD garantie"
   },
   "why": {

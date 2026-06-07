@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Vládou akreditovaný orgán",
-    "legal": "Európsky právny rámec — ERDF/ESF+ 2021–2027",
+    "legal": "FEDE pôsobí v právnom rámci upravujúcom európske a národné verejné financovanie vrátane programov EFRR/ESF+ 2021–2027. Naša akreditovaná štruktúra zaručuje plnú regulačnú zhodu každej podanej žiadosti.",
     "desc": "FEDE je oficiálna platforma pre podávanie žiadostí o nenávratné financovanie pre európskych nositeľov projektov.",
     "open": "Žiadosti 2025-2027 otvorené",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Prístup k programom EFRR, ESF+, Kohéznemu fondu a národným programom vo všetkých 27 členských štátoch EÚ. Každé územie má špecifické finančné obálky prispôsobené jeho ekonomickej, kultúrnej a odvetvovej realite.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Každého žiadateľa o projekt sprevádza vyhradený poradca FEDE, k dispozícii na overovanie dokumentov, odpovedanie na otázky a zabezpečenie úplnosti spisu až po konečné rozhodnutie o pridelení.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {

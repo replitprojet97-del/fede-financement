@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Organ akredytowany przez rząd",
-    "legal": "Europejskie ramy prawne — EFRR/EFS+ 2021–2027",
+    "legal": "FEDE działa w ramach prawnych regulujących europejskie i krajowe finansowanie publiczne, w tym programy EFRR/EFS+ 2021–2027. Nasza akredytowana struktura zapewnia pełną zgodność regulacyjną każdego złożonego wniosku.",
     "desc": "FEDE to oficjalna platforma do składania wniosków o bezzwrotne dofinansowanie dla inicjatorów projektów w Europie.",
     "open": "Wnioski 2025-2027 otwarte",
     "countries_count": "27 krajów objętych",
-    "countries_desc": "Programy EFRR, EFS+ i krajowe",
+    "countries_desc": "Dostęp do programów EFRR, EFS+, Funduszu Spójności i krajowych programów dedykowanych we wszystkich 27 państwach członkowskich UE. Każde terytorium dysponuje specyficznymi kopertami finansowymi dostosowanymi do jego realiów.",
     "advisor": "Dedykowane wsparcie",
-    "advisor_desc": "Dedykowany doradca na wniosek",
+    "advisor_desc": "Każdego wnioskodawcę wspiera dedykowany doradca FEDE, dostępny w celu weryfikacji dokumentów, odpowiadania na pytania i zapewnienia kompletności wniosku aż do ostatecznej decyzji o dofinansowaniu.",
     "rgpd": "Zgodność z RODO gwarantowana"
   },
   "why": {

@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Valtion akkreditoima elin",
-    "legal": "Eurooppalainen oikeudellinen kehys — EAKR/ESR+ 2021–2027",
+    "legal": "FEDE toimii Euroopan ja kansallisen julkisen rahoituksen oikeudellisessa kehyksessä, mukaan lukien EAKR/ESR+ 2021–2027. Akkreditoitu rakenteemme varmistaa jokaisen jätetyn hakemuksen täydellisen sääntelymukaisuuden.",
     "desc": "FEDE on virallinen alusta takaisinmaksuttomien rahoitusten hakemiseen Euroopan hankevetäjille.",
     "open": "Hakemukset 2025-2027 avoinna",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Pääsy EAKR-, ESR+-, Koheesiorahaston ja kansallisiin ohjelmiin kaikissa 27 EU:n jäsenvaltiossa. Jokaisella alueella on erityiset rahoituspuitteet, jotka on mukautettu sen taloudellisiin, kulttuurisiin ja alakohtaisiin olosuhteisiin.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Jokaista projektinhakijaa tukee oma FEDE-neuvoja, joka on käytettävissä asiakirjojen vahvistamiseen, kysymyksiin vastaamiseen ja hakemuksen täydellisyyden varmistamiseen lopulliseen myöntämispäätökseen asti.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {

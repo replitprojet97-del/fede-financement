@@ -40,13 +40,13 @@
   },
   "institutional": {
     "badge": "Valsts akreditēta iestāde",
-    "legal": "Eiropas tiesiskais regulējums — ERAF/ESF+ 2021–2027",
+    "legal": "FEDE darbojas Eiropas un nacionālā publiskā finansējuma tiesiskajā regulējumā, tostarp ERAF/ESF+ 2021–2027. Mūsu akreditētā struktūra garantē katras iesniegtās pieteikuma pilnīgu atbilstību regulatīvajām prasībām.",
     "desc": "FEDE ir oficiālā platforma neatmaksājama finansējuma pieteikumu iesniegšanai Eiropas projektu īstenotājiem.",
     "open": "2025.–2027. gada lietas atvērtas",
     "countries_count": "27 countries covered",
-    "countries_desc": "ERDF, ESF+ and national programmes",
+    "countries_desc": "Piekļuve ERAF, ESF+, Kohēzijas fonda un nacionālajām programmām visās 27 ES dalībvalstīs. Katrai teritorijai ir specifiski finansēšanas paketi, kas pielāgoti tās ekonomiskajai, kultūras un nozaru realitātei.",
     "advisor": "Dedicated support",
-    "advisor_desc": "A dedicated advisor per application",
+    "advisor_desc": "Katru projekta pieteicēju atbalsta veltīts FEDE padomnieks, kas ir pieejams dokumentu apstiprināšanai, jautājumu atbildēšanai un pieteikuma pilnīguma nodrošināšanai līdz galīgajam piešķiršanas lēmumam.",
     "rgpd": "GDPR compliance guaranteed"
   },
   "why": {
