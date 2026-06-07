@@ -224,6 +224,13 @@ function LangBootstrap() {
 }
 
 function App() {
+  useEffect(() => {
+    const ping = () => fetch("/api/healthz", { method: "GET" }).catch(() => {});
+    ping();
+    const id = setInterval(ping, 14 * 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
