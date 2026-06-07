@@ -3,7 +3,6 @@ import { QueryClient, QueryClientProvider, QueryCache, MutationCache } from "@ta
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider, useAuth } from "@/hooks/use-auth";
-import { AntiScamModal } from "@/components/AntiScamModal";
 import { LangContext } from "@/contexts/LangContext";
 import { isValidLang, getDetectedLang } from "@/lib/lang";
 import type { LangCode } from "@/lib/lang";
@@ -216,7 +215,6 @@ function LangBootstrap() {
       <AuthProvider>
         <WouterRouter base={`/${lang}`}>
           <Router />
-          <AntiScamModal />
         </WouterRouter>
       </AuthProvider>
     </LangContext.Provider>
