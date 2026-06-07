@@ -37,7 +37,7 @@ ensureSessionTable()
           fetch(pingUrl)
             .then(() => logger.debug("keep-alive ping ok"))
             .catch((e: unknown) => logger.warn({ err: e }, "keep-alive ping failed"));
-        }, 14 * 60 * 1000);
+        }, 12 * 60 * 1000);
         logger.info({ pingUrl }, "Keep-alive cron started");
       }
     });
