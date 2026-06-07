@@ -9,7 +9,7 @@ export function AntiScamModal() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const seen = localStorage.getItem(STORAGE_KEY);
+    const seen = import.meta.env.DEV ? false : localStorage.getItem(STORAGE_KEY);
     if (!seen) {
       const timer = setTimeout(() => setOpen(true), 1400);
       return () => clearTimeout(timer);
@@ -17,7 +17,7 @@ export function AntiScamModal() {
   }, []);
 
   const dismiss = () => {
-    localStorage.setItem(STORAGE_KEY, "1");
+    if (!import.meta.env.DEV) localStorage.setItem(STORAGE_KEY, "1");
     setOpen(false);
   };
 
