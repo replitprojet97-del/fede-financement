@@ -363,10 +363,10 @@ export default function Landing() {
       {/* ── GARANTIES — 4 PILIERS ── */}
       <div className="bg-white border-b-2 border-[#E5E8F0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 py-5 md:py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#E5E8F0] rounded-xl overflow-hidden md:rounded-none md:bg-transparent md:gap-0 md:divide-x md:divide-[#E5E8F0]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px bg-[#E5E8F0] rounded-xl overflow-hidden md:rounded-none md:bg-transparent md:gap-0 md:divide-x md:divide-[#E5E8F0]">
 
             {/* Pilier 1 */}
-            <div className="bg-white flex flex-col items-center text-center gap-2 px-3 py-4 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
+            <div className="bg-white flex flex-row items-start text-left gap-3 px-4 py-4 sm:flex-col sm:items-center sm:text-center sm:gap-2 sm:px-3 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
               <div className="w-10 h-10 rounded-xl bg-[#FFD500] flex items-center justify-center shrink-0">
                 <Shield className="w-5 h-5 text-[#0A1628]" />
               </div>
@@ -377,18 +377,18 @@ export default function Landing() {
             </div>
 
             {/* Pilier 2 */}
-            <div className="bg-white flex flex-col items-center text-center gap-2 px-3 py-4 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
+            <div className="bg-white flex flex-row items-start text-left gap-3 px-4 py-4 sm:flex-col sm:items-center sm:text-center sm:gap-2 sm:px-3 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
               <div className="w-10 h-10 rounded-xl bg-green-50 border border-green-200 flex items-center justify-center shrink-0">
                 <Check className="w-5 h-5 text-green-600" />
               </div>
               <div>
                 <div className="font-black text-[#0A1628] text-xs md:text-sm leading-snug mb-0.5">{t("institutional.open")}</div>
-                <div className="text-[#6B7896] text-[10px] md:text-xs leading-relaxed line-clamp-2">{t("institutional.desc")}</div>
+                <div className="text-[#6B7896] text-[10px] md:text-xs leading-relaxed">{t("institutional.desc")}</div>
               </div>
             </div>
 
             {/* Pilier 3 */}
-            <div className="bg-white flex flex-col items-center text-center gap-2 px-3 py-4 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
+            <div className="bg-white flex flex-row items-start text-left gap-3 px-4 py-4 sm:flex-col sm:items-center sm:text-center sm:gap-2 sm:px-3 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
               <div className="w-10 h-10 rounded-xl bg-[#F1F4FA] flex items-center justify-center shrink-0">
                 <Globe className="w-5 h-5 text-[#0D1F3C]" />
               </div>
@@ -399,7 +399,7 @@ export default function Landing() {
             </div>
 
             {/* Pilier 4 */}
-            <div className="bg-white flex flex-col items-center text-center gap-2 px-3 py-4 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
+            <div className="bg-white flex flex-row items-start text-left gap-3 px-4 py-4 sm:flex-col sm:items-center sm:text-center sm:gap-2 sm:px-3 md:flex-row md:items-start md:text-left md:gap-3 md:px-6 lg:px-8 md:py-2">
               <div className="w-10 h-10 rounded-xl bg-[#0D1F3C] flex items-center justify-center shrink-0">
                 <Users className="w-5 h-5 text-[#FFD500]" />
               </div>
