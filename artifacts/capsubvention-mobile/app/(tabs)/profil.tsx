@@ -274,9 +274,9 @@ export default function ProfilScreen() {
             <ScrollView style={styles.modalScroll} contentContainerStyle={{ padding: 20, paddingBottom: insets.bottom + 30 }}>
               <View style={styles.aboutLogoSection}>
                 <View style={styles.aboutIconCircle}>
-                  <Text style={styles.aboutIconText}>CS</Text>
+                  <Text style={styles.aboutIconText}>F</Text>
                 </View>
-                <Text style={styles.aboutAppName}>CapSubvention</Text>
+                <Text style={styles.aboutAppName}>FEDE</Text>
                 <Text style={styles.aboutVersion}>{t("profil.about_version")}</Text>
               </View>
 

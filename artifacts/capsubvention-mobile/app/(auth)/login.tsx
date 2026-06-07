@@ -67,7 +67,7 @@ export default function LoginScreen() {
         >
           <View style={styles.header}>
             <CSLogo size={72} />
-            <Text style={styles.brand}>CapSubvention</Text>
+            <Text style={styles.brand}>FEDE</Text>
             <View style={styles.taglineRow}>
               <View style={styles.taglineDot} />
               <Text style={styles.tagline}>{t("login.tagline")}</Text>

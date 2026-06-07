@@ -79,7 +79,7 @@ export function Scene2() {
           animate={phase >= 2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          CapSubvention
+          FEDE
         </motion.h1>
 
         <motion.p

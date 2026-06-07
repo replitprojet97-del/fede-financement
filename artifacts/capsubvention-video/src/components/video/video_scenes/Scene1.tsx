@@ -99,7 +99,7 @@ export function Scene1() {
           animate={phase >= 4 ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
           transition={{ duration: 0.5, ease: 'circOut' }}
         >
-          {['Martinique', 'Guadeloupe', 'La Réunion', 'Polynésie', 'Nouvelle-Calédonie'].map((territory, i) => (
+          {['France', 'Allemagne', 'Espagne', 'Italie', 'Pologne'].map((territory, i) => (
             <span
               key={i}
               className="px-4 py-2 rounded-full text-[1.1vw] font-semibold border"

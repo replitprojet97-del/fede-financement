@@ -118,7 +118,7 @@ export default function VerifyEmailScreen() {
         >
           <View style={s.header}>
             <CSLogo size={64} />
-            <Text style={s.brand}>CapSubvention</Text>
+            <Text style={s.brand}>FEDE</Text>
           </View>
 
           <View style={s.card}>

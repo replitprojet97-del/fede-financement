@@ -84,7 +84,7 @@ export default function DashboardScreen() {
           </View>
         </View>
         <View style={styles.goldBadge}>
-          <Text style={styles.goldBadgeText}>CS</Text>
+          <Text style={styles.goldBadgeText}>F</Text>
         </View>
       </View>
 

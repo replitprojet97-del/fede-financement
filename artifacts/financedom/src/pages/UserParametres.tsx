@@ -365,7 +365,7 @@ export default function UserParametres() {
         <Modal title={t("parametres.modal_about_title")} onClose={() => setShowAbout(false)}>
           <div className="flex flex-col items-center mb-6">
             <div className="w-20 h-20 rounded-2xl bg-[#0D1F3C] flex items-center justify-center mb-3 shadow-md">
-              <span className="text-[#FFD500] text-2xl font-black tracking-tight">FE</span>
+              <span className="text-[#FFD500] text-2xl font-black tracking-tight">F</span>
             </div>
             <h4 className="text-xl font-extrabold text-[#0D1F3C]">FEDE</h4>
             <p className="text-xs text-[#8B9BB4]">{t("parametres.about_sub")}</p>

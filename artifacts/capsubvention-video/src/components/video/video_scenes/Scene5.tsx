@@ -169,7 +169,7 @@ export function Scene5() {
                 </motion.p>
                 {/* Proper noun / reference — stays unchanged */}
                 <p className="text-[0.9vw]" style={{ color: 'rgba(255,255,255,0.4)' }}>
-                  FEDER · Martinique 2024
+                  FEDER · France 2024
                 </p>
               </motion.div>
             </div>

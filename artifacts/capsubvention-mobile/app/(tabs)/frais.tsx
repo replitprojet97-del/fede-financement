@@ -68,7 +68,7 @@ interface Virement {
 }
 
 const VIREMENT = {
-  beneficiaire: "CapSubvention — Service de gestion des financements",
+  beneficiaire: "FEDE — Service de gestion des financements",
   iban: "FR76 3000 6000 0112 3456 7890 189",
   bic: "AGRIFRPP",
   banque: "Crédit Agricole — Paris",

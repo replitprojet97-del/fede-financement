@@ -58,7 +58,7 @@ export default function ForgotPasswordScreen() {
 
           <View style={styles.header}>
             <CSLogo size={56} />
-            <Text style={styles.brand}>CapSubvention</Text>
+            <Text style={styles.brand}>FEDE</Text>
           </View>
 
           <View style={styles.card}>

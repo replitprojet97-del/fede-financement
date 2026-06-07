@@ -207,7 +207,7 @@ export default function MessagerieScreen() {
         {isSystem ? (
           <View style={styles.bubbleThem}>
             <View style={styles.avatar}>
-              <Text style={styles.avatarText}>CS</Text>
+              <Text style={styles.avatarText}>F</Text>
             </View>
             <View style={styles.systemBubble}>
               <Text style={styles.systemSenderLabel}>{item.expediteur}</Text>
@@ -219,7 +219,7 @@ export default function MessagerieScreen() {
           <View style={[styles.bubble, isMe ? styles.bubbleMe : styles.bubbleThem]}>
             {!isMe && (
               <View style={styles.avatar}>
-                <Text style={styles.avatarText}>CS</Text>
+                <Text style={styles.avatarText}>F</Text>
               </View>
             )}
             <View style={[styles.bubbleInner, isMe ? styles.bubbleInnerMe : styles.bubbleInnerThem]}>
@@ -243,7 +243,7 @@ export default function MessagerieScreen() {
       <View style={styles.header}>
         <View style={styles.headerLeft}>
           <View style={styles.advisorAvatar}>
-            <Text style={styles.advisorAvatarText}>CS</Text>
+            <Text style={styles.advisorAvatarText}>F</Text>
           </View>
           <View>
             <Text style={styles.headerTitle}>{t("messagerie.header_title")}</Text>

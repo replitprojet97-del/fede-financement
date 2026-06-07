@@ -135,7 +135,7 @@ export default function UserPaiement() {
                 <div className="flex justify-between items-start">
                   <div>
                     <div className="flex items-center gap-2 mb-4">
-                      <div className="w-8 h-8 rounded bg-[#FFD500] flex items-center justify-center font-bold text-sm text-[#0A1628]">FE</div>
+                      <div className="w-8 h-8 rounded bg-[#FFD500] flex items-center justify-center font-bold text-sm text-[#0A1628]">F</div>
                       <span className="font-extrabold text-white text-lg">FEDE</span>
                     </div>
                     <div className="text-white/50 text-xs">{t("paiement.facture_service")}</div>

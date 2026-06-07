@@ -85,7 +85,7 @@ export function Scene6() {
         animate={phase >= 2 ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
-        CapSubvention
+        FEDE
       </motion.h1>
 
       <motion.div
@@ -112,7 +112,7 @@ export function Scene6() {
         animate={phase >= 4 ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
         transition={{ duration: 0.6, ease: 'circOut' }}
       >
-        {['Martinique', 'Guadeloupe', 'La Réunion', 'Polynésie française', 'Nouvelle-Calédonie'].map((territory, i) => (
+        {['France', 'Allemagne', 'Espagne', 'Italie', 'Belgique', 'Pays-Bas', 'Portugal'].map((territory, i) => (
           <span
             key={i}
             className="px-4 py-2 rounded-full text-[1.1vw] font-semibold"
