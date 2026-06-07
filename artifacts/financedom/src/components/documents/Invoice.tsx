@@ -111,9 +111,9 @@ export function Invoice({
   tvaIntra          = "FR 91 914123456",
   adresse           = "15 rue des Entrepreneurs",
   codePostalVille   = "75015 Paris – France",
-  contactEmail      = "support@fede-financement.eu",
+  contactEmail      = "support@fede-financement.com",
   contactPhone      = "+33 (0) 800 123 456",
-  contactWebsite    = "www.fede-financement.eu",
+  contactWebsite    = "www.fede-financement.com",
   lang,
 }: InvoiceProps) {
   const T = (key: string) => i18n.t(key, { lng: lang || i18n.language || 'fr' });

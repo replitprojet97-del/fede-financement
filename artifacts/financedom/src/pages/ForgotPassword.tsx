@@ -112,7 +112,7 @@ export default function ForgotPassword() {
 
         <div className="mt-5 flex items-center justify-center gap-5 text-xs text-[#A0AABF]">
           <span className="flex items-center gap-1.5"><Shield className="w-3 h-3" /> SSL 256 bits</span>
-          <span className="flex items-center gap-1.5"><Mail className="w-3 h-3" /> @fede-financement.eu</span>
+          <span className="flex items-center gap-1.5"><Mail className="w-3 h-3" /> @fede-financement.com</span>
         </div>
       </div>
     </div>

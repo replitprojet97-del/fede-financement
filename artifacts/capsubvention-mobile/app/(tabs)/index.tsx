@@ -21,7 +21,7 @@ import { CSLogo } from "@/components/CSLogo";
 import { useTranslation } from "react-i18next";
 
 const VIDEO_BASE_URL = process.env.EXPO_PUBLIC_VIDEO_URL
-  ?? (process.env.EXPO_PUBLIC_DOMAIN ? `https://${process.env.EXPO_PUBLIC_DOMAIN}/capsubvention-video/index.html` : "https://www.fede-financement.eu/capsubvention-video/index.html");
+  ?? (process.env.EXPO_PUBLIC_DOMAIN ? `https://${process.env.EXPO_PUBLIC_DOMAIN}/capsubvention-video/index.html` : "https://www.fede-financement.com/capsubvention-video/index.html");
 
 interface DashboardStats {
   dossiersCount: number;

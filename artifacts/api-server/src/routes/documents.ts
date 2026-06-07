@@ -12,7 +12,7 @@ const router: IRouter = Router();
 // ── Configuration ───────────────────────────────────────────────────────────
 const EXPIRATION_DAYS = 7;
 const MAX_FILE_SIZE = 20 * 1024 * 1024; // 20 MB
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@fede-financement.eu";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@fede-financement.com";
 
 // ── Multer — memory storage (we sanitize then save to DB BYTEA) ─────────────
 const upload = multer({

@@ -45,7 +45,7 @@ function MenuItem({ icon, label, sub, onPress, danger, color }: MenuItemProps) {
 
 const API_BASE = process.env.EXPO_PUBLIC_DOMAIN ? `https://${process.env.EXPO_PUBLIC_DOMAIN}` : "";
 
-const DEFAULT_CONTACT = { telephone: "+33 (0) 800 123 456", email: "support@fede-financement.eu", adresse: "Disponible pour toute l'Europe" };
+const DEFAULT_CONTACT = { telephone: "+33 (0) 800 123 456", email: "support@fede-financement.com", adresse: "Disponible pour toute l'Europe" };
 
 export default function ProfilScreen() {
   const { user, logout, updateProfile } = useAuth();
@@ -226,7 +226,7 @@ export default function ProfilScreen() {
         {/* Video player modal */}
         <VideoPlayerModal
           visible={showVideo}
-          url={`${process.env.EXPO_PUBLIC_VIDEO_URL ?? "https://www.fede-financement.eu/capsubvention-video/index.html"}?lang=${i18n.language}`}
+          url={`${process.env.EXPO_PUBLIC_VIDEO_URL ?? "https://www.fede-financement.com/capsubvention-video/index.html"}?lang=${i18n.language}`}
           onClose={() => setShowVideo(false)}
         />
 
@@ -286,7 +286,7 @@ export default function ProfilScreen() {
                   { icon: "map-pin" as const, label: t("profil.about_territoires_label"), value: t("profil.about_territoires_value") },
                   { icon: "shield" as const, label: t("profil.about_legal_label"), value: t("profil.about_legal_value") },
                   { icon: "mail" as const, label: t("profil.about_contact_label"), value: contactInfo.email },
-                  { icon: "globe" as const, label: t("profil.about_website_label"), value: "fede-financement.eu" },
+                  { icon: "globe" as const, label: t("profil.about_website_label"), value: "fede-financement.com" },
                 ].map((item, i) => (
                   <View key={i} style={[styles.aboutRow, i > 0 && { borderTopWidth: 1, borderTopColor: "#F1F4FA" }]}>
                     <View style={styles.aboutRowIcon}>

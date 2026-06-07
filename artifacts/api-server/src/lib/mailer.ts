@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import { t, type Lang } from "./i18n";
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const FROM = process.env.RESEND_FROM ?? "FEDE <noreply@fede-financement.eu>";
+const FROM = process.env.RESEND_FROM ?? "FEDE <noreply@fede-financement.com>";
 const IS_CONFIGURED = !!RESEND_API_KEY;
 
 // ─── HTML escaping — appliqué à toutes les valeurs fournies par l'utilisateur ─
@@ -47,7 +47,7 @@ function layout(lang: string, title: string, body: string): string {
         <td style="background:#F8F9FC;border-top:1px solid #EEF0F7;padding:18px 40px;text-align:center;">
           <p style="margin:0;color:#B0BAD0;font-size:10px;line-height:1.7;">
             FEDE · Article L1611-2 CGCT · RGPD · France<br/>
-            © ${new Date().getFullYear()} FEDE — <a href="mailto:support@fede-financement.eu" style="color:#B5872A;text-decoration:none;">support@fede-financement.eu</a>
+            © ${new Date().getFullYear()} FEDE — <a href="mailto:support@fede-financement.com" style="color:#B5872A;text-decoration:none;">support@fede-financement.com</a>
           </p>
         </td>
       </tr>
