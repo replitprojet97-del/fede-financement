@@ -1,6 +1,6 @@
 # FEDE — Fonds Européen de Développement Économique
 
-Platform for non-reimbursable subventions across Europe (27 EU countries). Fee: 456€ TTC (Article L1611-2 CGCT). Domain placeholder: fede-financement.com (update when final domain is registered).
+Platform for non-reimbursable subventions across Europe (27 EU countries). Fee: 456€ TTC (Article L1611-2 CGCT). Domain placeholder: fede-financement.eu (update when final domain is registered).
 
 ## Run & Operate
 

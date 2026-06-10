@@ -139,7 +139,7 @@ export default function UserPaiement() {
                       <span className="font-extrabold text-white text-lg">FEDE</span>
                     </div>
                     <div className="text-white/50 text-xs">{t("paiement.facture_service")}</div>
-                    <div className="text-white/50 text-xs">support@fede-financement.com</div>
+                    <div className="text-white/50 text-xs">support@fede-financement.eu</div>
                   </div>
                   <div className="text-right">
                     <div className="text-white/60 text-xs uppercase tracking-widest mb-1">{t("paiement.facture_avis")}</div>

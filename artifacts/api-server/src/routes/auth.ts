@@ -660,7 +660,7 @@ router.post("/auth/forgot-password", authRateLimit, async (req, res): Promise<vo
     expiresAt,
   });
 
-  const resetUrl = `${process.env.FRONTEND_URL ?? "https://www.fede-financement.com"}/reset-password?token=${token}`;
+  const resetUrl = `${process.env.FRONTEND_URL ?? "https://www.fede-financement.eu"}/reset-password?token=${token}`;
   const lang = territoireToLang(user.territoire);
 
   await sendPasswordReset({ to: user.email, prenom: user.prenom, resetUrl, lang });

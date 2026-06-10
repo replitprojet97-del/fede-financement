@@ -211,9 +211,9 @@ export function MissionContract({
   introPrestataire,
   engagementsClient,
   introClient,
-  contactEmail = "support@fede-financement.com",
+  contactEmail = "support@fede-financement.eu",
   contactPhone = "+33 (0) 800 123 456",
-  contactWebsite = "www.fede-financement.com",
+  contactWebsite = "www.fede-financement.eu",
   lang,
 }: MissionContractProps) {
   const T = (key: string) => i18n.t(key, { lng: lang || i18n.language || 'fr' });

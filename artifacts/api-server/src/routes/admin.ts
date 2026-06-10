@@ -509,7 +509,7 @@ router.get("/settings/banque-partenaire", async (_req, res): Promise<void> => {
 // ─── CONTACT SETTINGS ─────────────────────────────────────────────────────────
 
 const CONTACT_KEY = "contact_info";
-const DEFAULT_CONTACT = { telephone: "+33 (0) 800 123 456", email: "support@fede-financement.com", adresse: "Disponible pour toute l'Europe" };
+const DEFAULT_CONTACT = { telephone: "+33 (0) 800 123 456", email: "support@fede-financement.eu", adresse: "Disponible pour toute l'Europe" };
 
 function parseContact(row?: { value: string } | null): typeof DEFAULT_CONTACT {
   try { return { ...DEFAULT_CONTACT, ...JSON.parse(row?.value ?? "{}") }; } catch { return DEFAULT_CONTACT; }

@@ -101,10 +101,10 @@ function addLetterhead(doc: InstanceType<typeof PDFDocument>, dateStr?: string, 
   doc.fillColor("#A8BAD4").font("Helvetica").fontSize(8.5)
     .text("Financement public non remboursable · Article L1611-2 CGCT", 52, 50);
   // Contacts
-  const email = contact?.email ?? "support@fede-financement.com";
+  const email = contact?.email ?? "support@fede-financement.eu";
   const tel   = contact?.telephone ?? "+33 (0) 800 123 456";
   doc.fillColor("#7A92B4").font("Helvetica").fontSize(7.5)
-    .text(`${email}  ·  ${tel}  ·  www.fede-financement.com`, 52, 67);
+    .text(`${email}  ·  ${tel}  ·  www.fede-financement.eu`, 52, 67);
 
   // Date (alignée à droite)
   const d = dateStr ?? localeDateStr("fr");
@@ -116,13 +116,13 @@ function addLetterhead(doc: InstanceType<typeof PDFDocument>, dateStr?: string, 
 
 // ── Pied de page ───────────────────────────────────────────────────────────────
 function addFooter(doc: InstanceType<typeof PDFDocument>, contact?: ContactInfo, pageLabel?: string) {
-  const email = contact?.email ?? "support@fede-financement.com";
+  const email = contact?.email ?? "support@fede-financement.eu";
   const tel   = contact?.telephone ? ` · ${contact.telephone}` : " · +33 (0) 800 123 456";
   const bottom = doc.page.height - 42;
   doc.rect(5, bottom - 12, doc.page.width - 5, 0.5).fill("#D1DAE8");
   doc.fillColor(GRIS_TEXTE).font("Helvetica").fontSize(7.5)
     .text(
-      `FEDE · ${email}${tel} · www.fede-financement.com · RGPD · © ${new Date().getFullYear()}`,
+      `FEDE · ${email}${tel} · www.fede-financement.eu · RGPD · © ${new Date().getFullYear()}`,
       52, bottom, { align: "center", width: doc.page.width - 104 },
     );
   if (pageLabel) {
@@ -327,7 +327,7 @@ export async function generateAccuseReception(
   );
   infoRow(doc,
     lang === "fr" ? "Contact & suivi"   : "Contact & follow-up",
-    contact?.email ?? "support@fede-financement.com",
+    contact?.email ?? "support@fede-financement.eu",
   );
   doc.moveDown(0.3);
 
@@ -688,7 +688,7 @@ export async function generateContratMission(
   doc.fillColor(BLANC).font("Helvetica-Bold").fontSize(10)
     .text("FEDE", 64, partiesY + 20, { width: halfW - 16 });
   doc.fillColor("#BFDBFE").font("Helvetica").fontSize(8)
-    .text(contact?.email ?? "support@fede-financement.com", 64, partiesY + 34, { width: halfW - 16 });
+    .text(contact?.email ?? "support@fede-financement.eu", 64, partiesY + 34, { width: halfW - 16 });
   // Client
   doc.rect(52 + halfW + 8, partiesY, halfW, 52).fill(GRIS_CLAIR);
   doc.rect(52 + halfW + 8, partiesY, 3, 52).fill(GOLD);

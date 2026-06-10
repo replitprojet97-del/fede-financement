@@ -31,7 +31,7 @@ const SECTIONS: Section[] = [
     subtitle: "Accéder à l'espace conseillers",
     steps: [
       { num: 1, title: "Ouvrir la page de connexion", desc: "Rendez-vous sur l'URL de l'espace conseillers FEDE et cliquez sur « Connexion »." },
-      { num: 2, title: "Saisir vos identifiants", desc: "Entrez votre adresse e-mail admin (support@fede-financement.com) et votre mot de passe." },
+      { num: 2, title: "Saisir vos identifiants", desc: "Entrez votre adresse e-mail admin (support@fede-financement.eu) et votre mot de passe." },
       { num: 3, title: "Vérification TOTP", desc: "Ouvrez votre application d'authentification (Google Authenticator ou Authy), et saisissez le code à 6 chiffres affiché. Le code change toutes les 30 secondes — utilisez-le immédiatement." },
       { num: 4, title: "Session active", desc: "La session admin est valable 8 heures. Au-delà, une nouvelle vérification TOTP est requise automatiquement." },
     ],

@@ -311,7 +311,7 @@ export default function UserParametres() {
               icon={<MessageSquare className="w-4 h-4 text-[#0D1F3C]" />}
               label={t("parametres.contact_support")}
               sub={t("parametres.contact_support_sub")}
-              onClick={() => { window.location.href = "mailto:support@fede-financement.com"; }}
+              onClick={() => { window.location.href = "mailto:support@fede-financement.eu"; }}
             />
             <MenuRow
               icon={<FileText className="w-4 h-4 text-[#6B7896]" />}
@@ -339,7 +339,7 @@ export default function UserParametres() {
               <li><span className="font-bold">❌ {t("parametres.no_telegram")}</span> {t("parametres.no_telegram_desc")}</li>
               <li><span className="font-bold">❌ {t("parametres.no_wire")}</span> {t("parametres.no_wire_desc")}</li>
               <li><span className="font-bold">❌ {t("parametres.no_pwd")}</span> {t("parametres.no_pwd_desc")}</li>
-              <li><span className="font-bold">✅ {t("parametres.report")}</span> support@fede-financement.com</li>
+              <li><span className="font-bold">✅ {t("parametres.report")}</span> support@fede-financement.eu</li>
             </ul>
           </div>
         </div>
