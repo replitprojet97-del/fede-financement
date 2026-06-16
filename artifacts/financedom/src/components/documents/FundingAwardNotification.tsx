@@ -93,9 +93,9 @@ export function FundingAwardNotification({
   honorairesTTC  = "456,00 € TTC",
   honorairesHT   = "380,00 € HT + TVA 20 %",
   obligations,
-  contactEmail   = "support@fede-financement.eu",
+  contactEmail   = "support@fede-financement.com",
   contactPhone   = "+33 (0) 800 123 456",
-  contactWebsite = "www.fede-financement.eu",
+  contactWebsite = "www.fede-financement.com",
   lang,
 }: FundingAwardNotificationProps) {
   const T = (key: string) => i18n.t(key, { lng: lang || i18n.language || 'fr' });

@@ -11,7 +11,7 @@ import { sendDossierSoumis, sendNewDossierAdmin } from "../lib/mailer";
 import { generatePdfToken } from "../lib/pdfToken";
 import { t as i18nT, territoireToLang } from "../lib/i18n";
 
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@fede-financement.eu";
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@fede-financement.com";
 
 const router: IRouter = Router();
 
@@ -320,7 +320,7 @@ router.get("/dossiers/:id/pdf/:type", requireAuthForPdf, async (req, res): Promi
     const d = { reference: dossier.reference, titre: dossier.titre, territoire: dossier.territoire, dispositif: dossier.dispositif ?? "", secteur: dossier.secteur ?? "", montantDemande: dossier.montantDemande ?? 0, description: dossier.description ?? "", expertDesigne: dossier.expertDesigne ?? "", createdAt: dossier.createdAt?.toISOString() ?? new Date().toISOString() };
     const u = { prenom: user.prenom, nom: user.nom, email: user.email, telephone: user.telephone ?? "", organisation: user.organisation ?? "", typePorteur: user.typePorteur ?? "" };
     const contactRow = await db.query.settingsTable.findFirst({ where: eq(settingsTable.key, "contact_info") });
-    let contact: { telephone?: string; email?: string; adresse?: string } = { telephone: "+33 (0) 800 123 456", email: "support@fede-financement.eu", adresse: "Disponible pour toute l'Europe" };
+    let contact: { telephone?: string; email?: string; adresse?: string } = { telephone: "+33 (0) 800 123 456", email: "support@fede-financement.com", adresse: "Disponible pour toute l'Europe" };
     try { if (contactRow?.value) contact = { ...contact, ...JSON.parse(contactRow.value) }; } catch { /* keep defaults */ }
     let buf: Buffer;
     let filename = `${type}-${dossier.reference}.pdf`;

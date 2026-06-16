@@ -7,7 +7,7 @@ export type LangCode =
   | "fr" | "es" | "it" | "pt" | "de" | "nl" | "en" | "sv" | "da" | "pl"
   | "ro" | "el" | "hu" | "fi" | "sk" | "hr" | "lt" | "bg" | "lv" | "sl" | "et" | "cs";
 
-export const SITE_URL = "https://www.fede-financement.eu";
+export const SITE_URL = "https://www.fede-financement.com";
 
 export const HREFLANG_MAP: Record<LangCode, string> = {
   fr: "fr-FR", es: "es-ES", it: "it-IT", pt: "pt-PT", de: "de-DE",

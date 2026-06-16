@@ -164,7 +164,7 @@ export default function AdminParametres() {
             <div className="p-6 space-y-4">
               {[
                 { key: "telephone" as const, label: "Numéro de téléphone", icon: <Phone className="w-4 h-4 text-[#FFD500]" />, placeholder: "+33 (0) 800 123 456" },
-                { key: "email" as const, label: "Email de support", icon: <Mail className="w-4 h-4 text-[#FFD500]" />, placeholder: "support@fede-financement.eu" },
+                { key: "email" as const, label: "Email de support", icon: <Mail className="w-4 h-4 text-[#FFD500]" />, placeholder: "support@fede-financement.com" },
                 { key: "adresse" as const, label: "Adresse / disponibilité", icon: <MapPin className="w-4 h-4 text-[#FFD500]" />, placeholder: "Disponible pour toute l'Europe" },
               ].map(({ key, label, icon, placeholder }) => (
                 <div key={key}>

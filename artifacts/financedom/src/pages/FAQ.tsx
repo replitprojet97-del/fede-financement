@@ -195,7 +195,7 @@ export default function FAQ() {
           <div className="text-[#0D1F3C] font-bold text-lg mb-2">{t("faq_page.contact_title")}</div>
           <p className="text-[#5B6580] text-sm mb-6">{t("faq_page.contact_sub")}</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:support@fede-financement.eu" className="inline-flex items-center gap-2 bg-[#0D1F3C] hover:bg-[#162B52] text-white font-semibold px-6 py-3 rounded-lg transition-all shadow-md text-sm">
+            <a href="mailto:support@fede-financement.com" className="inline-flex items-center gap-2 bg-[#0D1F3C] hover:bg-[#162B52] text-white font-semibold px-6 py-3 rounded-lg transition-all shadow-md text-sm">
               {t("faq_page.write")}
             </a>
             <Link href="/register" className="inline-flex items-center gap-2 border border-[#DDE2EC] hover:border-[#0D1F3C] text-[#0D1F3C] font-semibold px-6 py-3 rounded-lg transition-all text-sm">

@@ -101,7 +101,7 @@ export default function Landing() {
     t("landing.partner1"), t("landing.partner2"), t("landing.partner3"), t("landing.partner4"),
     t("landing.partner5"), t("landing.partner6"), t("landing.partner7"), t("landing.partner8"),
   ];
-  const [contactInfo, setContactInfo] = useState({ telephone: "+33 (0) 800 123 456", email: "support@fede-financement.eu", adresse: "Disponible pour toute l'Europe" });
+  const [contactInfo, setContactInfo] = useState({ telephone: "+33 (0) 800 123 456", email: "support@fede-financement.com", adresse: "Disponible pour toute l'Europe" });
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL ?? ""}/api/settings/contact`).then(r => r.ok ? r.json() : null).then(d => { if (d) setContactInfo(d); }).catch(() => {});
