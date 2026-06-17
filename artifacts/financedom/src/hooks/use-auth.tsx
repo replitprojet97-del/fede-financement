@@ -10,6 +10,7 @@ export interface PendingVerification {
   email: string;
   prenom: string;
   message: string;
+  expiresAt?: string;
 }
 
 type AuthContextType = {
@@ -86,6 +87,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         email: data.email,
         prenom: "",
         message: anyResult.message ?? t("auth.msg_verify_sent"),
+        expiresAt: anyResult.expiresAt,
       });
       return;
     }

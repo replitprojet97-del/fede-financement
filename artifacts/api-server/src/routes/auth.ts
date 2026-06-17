@@ -436,9 +436,11 @@ router.post("/auth/login", authRateLimit, async (req, res): Promise<void> => {
     const code = generateCode();
     const expiresAt = new Date(Date.now() + 5 * 60 * 1000);
 
-    await db.delete(verificationCodesTable).where(
-      and(eq(verificationCodesTable.userId, user.id), eq(verificationCodesTable.used, false))
-    );
+    // Mark old unused codes as used instead of deleting — prevents "expired" errors
+    // when user re-attempts login before entering the first code
+    await db.update(verificationCodesTable)
+      .set({ used: true })
+      .where(and(eq(verificationCodesTable.userId, user.id), eq(verificationCodesTable.used, false)));
 
     await db.insert(verificationCodesTable).values({
       userId: user.id,
@@ -457,6 +459,7 @@ router.post("/auth/login", authRateLimit, async (req, res): Promise<void> => {
     res.status(202).json({
       requiresVerification: true,
       userId: user.id,
+      expiresAt: expiresAt.toISOString(),
       message: "Nouvelle adresse IP détectée. Un code de vérification a été envoyé à votre adresse email.",
     });
     return;

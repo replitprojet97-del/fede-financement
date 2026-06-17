@@ -11,10 +11,11 @@ interface Props {
   message: string;
   type: "email" | "2fa";
   endpoint: string;
+  expiresAt?: string;
   onSuccess: (data: { user: any; token: string }) => void;
 }
 
-export default function VerifyEmail({ userId, email, prenom, message, type, endpoint, onSuccess }: Props) {
+export default function VerifyEmail({ userId, email, prenom, message, type, endpoint, expiresAt, onSuccess }: Props) {
   const { t } = useTranslation();
   const { clearPending } = useAuth();
   const [code, setCode] = useState(["", "", "", "", "", ""]);
@@ -22,8 +23,17 @@ export default function VerifyEmail({ userId, email, prenom, message, type, endp
   const [resending, setResending] = useState(false);
   const [error, setError] = useState("");
   const [resent, setResent] = useState(false);
-  const totalSeconds = type === "email" ? 600 : 300;
-  const [timeLeft, setTimeLeft] = useState(totalSeconds);
+  const submittingRef = useRef(false);
+
+  const getInitialSeconds = () => {
+    if (expiresAt) {
+      const secs = Math.floor((new Date(expiresAt).getTime() - Date.now()) / 1000);
+      return Math.max(0, secs);
+    }
+    return type === "email" ? 600 : 300;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(getInitialSeconds);
   const codeRefs = useRef<(HTMLInputElement | null)[]>([]);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -65,6 +75,8 @@ export default function VerifyEmail({ userId, email, prenom, message, type, endp
   const submitCode = async (codeStr?: string) => {
     const fullCode = codeStr ?? code.join("");
     if (fullCode.length < 6) return;
+    if (submittingRef.current) return;
+    submittingRef.current = true;
     setError("");
     setLoading(true);
     try {
@@ -81,6 +93,7 @@ export default function VerifyEmail({ userId, email, prenom, message, type, endp
       setError(err.message ?? t("auth.error_invalid_code"));
       setCode(["", "", "", "", "", ""]);
       codeRefs.current[0]?.focus();
+      submittingRef.current = false;
     } finally {
       setLoading(false);
     }

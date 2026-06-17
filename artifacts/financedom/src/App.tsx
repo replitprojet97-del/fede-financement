@@ -124,6 +124,7 @@ function Router() {
         endpoint={endpoint}
         type={pendingVerification.type}
         message={pendingVerification.message}
+        expiresAt={pendingVerification.expiresAt}
       />
     );
   }
