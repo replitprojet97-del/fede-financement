@@ -38,16 +38,17 @@ const DGRAY  = "#374151";
 /* ─── Shared micro-components ───────────────────────────────────────────────── */
 
 function CLogoSquare({ size = 32 }: { size?: number }) {
+  const dots = Array.from({ length: 12 }, (_, i) => {
+    const angle = (i * 30 - 90) * (Math.PI / 180);
+    return { cx: +(50 + 40 * Math.cos(angle)).toFixed(2), cy: +(50 + 40 * Math.sin(angle)).toFixed(2) };
+  });
   return (
-    <div style={{
-      width: size, height: size, background: NAVY, borderRadius: 4,
-      display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
-    }}>
-      <span style={{
-        fontFamily: "'Playfair Display', serif", fontWeight: 700,
-        color: GOLD, fontSize: size * 0.52, lineHeight: 1,
-      }}>C</span>
-    </div>
+    <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="50" fill="#0D1F3C" />
+      {dots.map((d, i) => <circle key={i} cx={d.cx} cy={d.cy} r="3.5" fill="#FFD500" opacity="0.85" />)}
+      <circle cx="50" cy="50" r="30" fill="#162B52" />
+      <text x="50" y="65" textAnchor="middle" fontFamily="Arial Black, Arial, sans-serif" fontWeight="900" fontSize="40" fill="#FFD500">F</text>
+    </svg>
   );
 }
 

@@ -384,26 +384,17 @@
 
 .doc-header-logo {
   display: flex;
-  align-items: baseline;
-  gap: 0px;
+  align-items: center;
+  gap: 10px;
   letter-spacing: 0.04em;
 }
 
 .doc-logo-cap {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #D4A63A;
-}
-
-.doc-logo-sub {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: #93C5FD;
-  letter-spacing: 0.12em;
-  margin-left: 6px;
-  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  color: #FFD500;
+  letter-spacing: 0.14em;
 }
 
 .doc-header-meta {

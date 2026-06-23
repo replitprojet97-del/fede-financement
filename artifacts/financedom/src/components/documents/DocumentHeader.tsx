@@ -11,6 +11,21 @@ interface DocumentHeaderProps {
   badge?: DocBadge;
 }
 
+function FedeLogoSvg({ size = 34 }: { size?: number }) {
+  const dots = Array.from({ length: 12 }, (_, i) => {
+    const angle = (i * 30 - 90) * (Math.PI / 180);
+    return { cx: +(50 + 40 * Math.cos(angle)).toFixed(2), cy: +(50 + 40 * Math.sin(angle)).toFixed(2) };
+  });
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="50" fill="#0D1F3C" />
+      {dots.map((d, i) => <circle key={i} cx={d.cx} cy={d.cy} r="3.5" fill="#FFD500" opacity="0.85" />)}
+      <circle cx="50" cy="50" r="30" fill="#162B52" />
+      <text x="50" y="65" textAnchor="middle" fontFamily="Arial Black, Arial, sans-serif" fontWeight="900" fontSize="40" fill="#FFD500">F</text>
+    </svg>
+  );
+}
+
 const BADGE_STYLES: Record<DocBadge, { bg: string; text: string; label: string }> = {
   OFFICIEL:      { bg: "#0B1F4D", text: "#ffffff",  label: "DOCUMENT OFFICIEL" },
   CONFIDENTIEL:  { bg: "#7F1D1D", text: "#ffffff",  label: "CONFIDENTIEL" },
@@ -32,8 +47,8 @@ export function DocumentHeader({
     <header className="doc-header">
       <div className="doc-header-band">
         <div className="doc-header-logo">
-          <span className="doc-logo-cap">CAP</span>
-          <span className="doc-logo-sub">SUBVENTION</span>
+          <FedeLogoSvg size={34} />
+          <span className="doc-logo-cap">FEDE</span>
         </div>
         <div className="doc-header-meta">
           {territory && <span className="doc-meta-territory">{territory}</span>}
