@@ -591,11 +591,14 @@ router.post("/admin/frais", requireAdmin, async (req, res): Promise<void> => {
   );
 
   const [coordMsgRow] = await db.select().from(coordonneesBancairesTable).limit(1);
-  const libelleMsg = coordMsgRow
-    ? (coordMsgRow.libelleVirement ?? "")
-        .replace("[REF_FRAIS]", frais.reference)
-        .replace("[REF_DOSSIER]", dossier.reference)
-    : frais.reference;
+  const libelleMsg = (() => {
+    const raw = coordMsgRow
+      ? (coordMsgRow.libelleVirement ?? "")
+          .replace("[REF_FRAIS]", frais.reference)
+          .replace("[REF_DOSSIER]", dossier.reference)
+      : "";
+    return raw.trim() || frais.reference;
+  })();
 
   // Email: notification frais (avec coordonnées bancaires déjà chargées)
   const [user] = await db.select().from(usersTable).where(eq(usersTable.id, dossier.userId));
