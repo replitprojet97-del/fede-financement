@@ -3,7 +3,7 @@ import { AdminLayout } from "@/components/layout/AdminLayout";
 import {
   FolderOpen, AlertTriangle, CreditCard, CheckCircle2, ChevronRight,
   Users, Banknote, TrendingUp, Clock, Activity, ArrowUpRight,
-  FileText, MapPin, Star, Inbox,
+  FileText, MapPin, Star, Inbox, BookOpen, Rocket,
 } from "lucide-react";
 import { Link } from "wouter";
 
@@ -168,6 +168,36 @@ export default function AdminDashboard() {
           </div>
         </div>
       </div>
+
+      {/* ── BANNIÈRE GUIDE ── */}
+      <Link href="/admin/guide">
+        <div className="mb-6 rounded-2xl overflow-hidden cursor-pointer group relative"
+          style={{ background: "linear-gradient(135deg, #B5872A 0%, #FFD500 50%, #B5872A 100%)" }}>
+          <div className="absolute inset-0 bg-[#0D1F3C]/10 group-hover:bg-[#0D1F3C]/0 transition-colors" />
+          <div className="relative flex items-center justify-between px-7 py-4">
+            <div className="flex items-center gap-4">
+              <div className="w-11 h-11 rounded-xl bg-white/25 flex items-center justify-center shrink-0">
+                <BookOpen className="w-6 h-6 text-[#0D1F3C]" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-0.5">
+                  <Rocket className="w-3.5 h-3.5 text-[#0D1F3C]/70" />
+                  <span className="text-[10px] font-bold text-[#0D1F3C]/70 uppercase tracking-widest">Première connexion ?</span>
+                </div>
+                <p className="font-extrabold text-[#0D1F3C] text-base leading-tight">
+                  Consultez le guide d'utilisation avant de commencer
+                </p>
+                <p className="text-[#0D1F3C]/70 text-xs mt-0.5">
+                  Paramétrage, workflow complet des dossiers, frais, virements — tout est expliqué étape par étape.
+                </p>
+              </div>
+            </div>
+            <div className="shrink-0 flex items-center gap-2 bg-[#0D1F3C] text-[#FFD500] text-sm font-bold px-5 py-2.5 rounded-xl group-hover:bg-[#162B52] transition-colors shadow-md whitespace-nowrap">
+              Ouvrir le guide <ChevronRight className="w-4 h-4" />
+            </div>
+          </div>
+        </div>
+      </Link>
 
       {/* ── KPI principaux ── */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
@@ -390,6 +420,7 @@ export default function AdminDashboard() {
               <QuickLink href="/admin/dossiers" label="Tous les dossiers" />
               <QuickLink href="/admin/users" label="Utilisateurs" hint={usersCount.toString()} />
               <QuickLink href="/admin/reviews" label="Modération des avis" badge={reviewsPending > 0 ? reviewsPending : undefined} icon={<Star className="w-3.5 h-3.5" />} />
+              <QuickLink href="/admin/guide" label="Guide d'utilisation" icon={<BookOpen className="w-3.5 h-3.5" />} />
             </div>
           </div>
         </div>
