@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
+import { useNoCopy } from "@/hooks/use-no-copy";
 import {
   ChevronDown, ChevronUp, Check, Shield, FileText, Building, Lightbulb, Sprout,
   Home, GraduationCap, Landmark, Star, ArrowRight,
@@ -48,6 +49,7 @@ const CHIFFRES_STATIC = [
 ];
 
 export default function Landing() {
+  useNoCopy();
   const { t } = useTranslation();
   useSEO({
     title: `FEDE — ${t("nav.subtitle")} | FEDER FSE+ 2025-2027`,

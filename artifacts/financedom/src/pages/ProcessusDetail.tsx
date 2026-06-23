@@ -1,10 +1,12 @@
 import { Link } from "wouter";
+import { useNoCopy } from "@/hooks/use-no-copy";
 import { ArrowLeft, ArrowRight, FileText, Shield, Star, CheckCircle, Clock, AlertTriangle, Upload, Euro, Bell, Check, Users, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSEO } from "@/hooks/useSEO";
 import { CSLogo } from "@/components/CSLogo";
 
 export default function ProcessusDetail() {
+  useNoCopy();
   const { t } = useTranslation();
   useSEO({
     title: t("nav_process", "Processus") + " — FEDE",

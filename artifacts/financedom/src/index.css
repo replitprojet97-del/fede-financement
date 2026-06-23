@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 @import "tailwindcss";
+
+/* ── Protection anti-copie (pages publiques) ─── */
+body.no-copy {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+body.no-copy input,
+body.no-copy textarea,
+body.no-copy select,
+body.no-copy [contenteditable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+body.no-copy img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 

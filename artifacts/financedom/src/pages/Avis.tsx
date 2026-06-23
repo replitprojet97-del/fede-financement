@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
+import { useNoCopy } from "@/hooks/use-no-copy";
 import { Star, ArrowLeft, CheckCircle, Quote, Shield, Send, Lock } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 import { useTranslation } from "react-i18next";
@@ -42,6 +43,7 @@ const STATS_AVIS_VAL_KEYS = ["avis_page.stat_val_rating", "avis_page.stat_val_sa
 const STATS_AVIS_KEYS = ["avis_page.stat_rating", "avis_page.stat_satisfied", "avis_page.stat_files", "avis_page.stat_max"];
 
 export default function Avis() {
+  useNoCopy();
   const { t } = useTranslation();
   useSEO({
     title: t("avis_page.stat_rating", "Avis clients") + " — FEDE",

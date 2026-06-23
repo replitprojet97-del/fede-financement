@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "wouter";
+import { useNoCopy } from "@/hooks/use-no-copy";
 import { ChevronDown, ChevronUp, ArrowLeft, Search, Shield, Euro, Clock, FileText, Globe, ArrowRight, ShieldAlert } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSEO } from "@/hooks/useSEO";
@@ -83,6 +84,7 @@ const FAQ_CATEGORIES = [
 ];
 
 export default function FAQ() {
+  useNoCopy();
   const { t } = useTranslation();
   useSEO({
     title: t("nav_faq", "FAQ") + " — FEDE",
