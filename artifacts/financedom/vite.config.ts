@@ -80,9 +80,9 @@ export default defineConfig({
     host: true,
     strictPort: true,
     allowedHosts: true,
-    hmr: {
-      clientPort: 443,
-    },
+    hmr: process.env.REPLIT_DEV_DOMAIN
+      ? { host: process.env.REPLIT_DEV_DOMAIN, clientPort: 443, protocol: "wss" }
+      : true,
     fs: {
       strict: true,
       deny: ["**/.*"],
